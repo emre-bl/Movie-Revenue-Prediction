@@ -1,5 +1,4 @@
-You can try the application here ➔ [Simple Movie Prediction App](https://movie-revenue-predictions.herokuapp.com/)
+You can try the application here ➔ [Simple Movie Prediction App](https://emre-bl-movie-revenue-prediction-deploy-po0x7e.streamlit.app/)
 
-![image](https://user-images.githubusercontent.com/57074947/204848248-7b03aaf7-cf91-4183-b116-4767cd8d4c4d.png)
-
+![image](https://user-images.githubusercontent.com/57074947/208306408-13c5c324-00eb-4dbc-b047-52d7440d840a.png)
  
