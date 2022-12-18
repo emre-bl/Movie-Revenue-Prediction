@@ -1,0 +1,77 @@
+1- Setting & Scraping the Data
+Kullanılacak verisetini oluşturmak için veri çekme/düzenleme/birleştirme işlemlerini halleden kısım.
+
+Collecting movies since 1990:
+1990 ve sonrası filmlerin IMDb verilerini ayıklar
+
+extracting vote data:
+IMDb url'si çıkartılan filmlerin oy sayılarını çeker.
+
+Merging movie and box office datasets:
+Öznitelikleri bulunan filmleri hasılatlarıyla eşletirip yeni bir dataset oluşturur.
+
+Getting revenues:
+Dataset'te eksik/yanlış olan hasılat değerlerini tekrar internetten çeker.
+
+2- Exploring data
+
+Checking data:
+Verisetinin genel istatistik özelliklerini ve özniteliklerin özelliklerini gösterir
+
+Visualization:
+Verisetini daha iyi anlamak için görselleştirir
+
+splitting and normalization:
+Verisetini modellerin eğitimi için uygun hale getirir.
+
+3- Classical Models
+
+Classical Model methods:
+kullanılacak klasik makine öğrenimi modelleri için gerekli veri ayarlama ve grafik çizme metotları tanımlanır
+
+Linear regression/ Support vector regression/ random forest regression:
+Kullanılacak klasik öğrenme modellerinin eğitim ve değerlendirme aşaması
+
+4- NN methods
+kullanılacak nöral ağlar için gerekli veri ayarlama ve grafik çizme metotları tanımlanır
+
+5- NNS
+
+normal tries:
+hiperparametre optimizasyonu yapmadan önce çalışacağımız parametre uzayı hakkında genel bir fikre sahip olmak için eğitilen nöral ağlar.
+
+tuner tries:
+Kerastuner kullanarak elde ettiğimiz en iyi modeller
+
+6- Keras-Tuner
+Nöral ağlar için arama yapacağımız uzayın ayarlanması ve 3 ayrı şekilde parametre uzayında arama yapılması
+
+7- Embedded
+Deployment'ta kullanılmak üzere belirlenen 7 modelin birleştirilmesi ve sonuç analizi
+
+
+DEPLOYMENT
+# images and help with url kısmında kullanıcı eğer bir url ile veri girmek istiyorsa bunu nasıl yapacağı anlatılıyor
+
+user_input_features() metodu kullanıcı eğer url sağlamışsa oradan veri çekiyor, eğer url sağlanmamışsa elle input girilmesi için alanlar oluşturuyor
+
+scale_raw_input_for_NN() metodu kullanıcıdan alınan verileri nöral ağların eğitildiği verinin formatına sokuyor
+
+# input display kısmı modele beslenen verileri kullanıcıya gösteriyor
+
+# predicting kısmı belirlenen 7 tane modelin tahminlerinin eşit ağırlıklı ortalamasını hesaplıyor
+
+# printing kısmı sonucu ve sonuç için belirlenen aralığı ekrana bastırıyor.
+
+
+
+DİĞER DOSYALAR
+.png dosyaları url ile veri çekme işlemini kullanıcıya açıklamak için kullanılan resimler
+.h5 dosyaları embedding modelde kullanılan nöral ağlar.
+MinMaxScaler.pickle dosyası verileri normalize eden obje.
+Procfile ve setup.sh dosyaları aynı uygulamanın heroku üzerinde ayağa kaldırılması için gerekli dosyalar.
+
+
+
+
+
